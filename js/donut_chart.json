@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A donut chart with data selection and click-to-emphasize.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/HuitaoZan/Fit3179/main/data/result_file_top15.csv",
+    "format": {"type": "csv"}
+  },
+  "selection": {
+    "causesSelection": {"type": "multi", "fields": ["Causes"], "bind": "legend"}
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 50,
+    "tooltip": true,
+    "cursor": "pointer"
+  },
+  "encoding": {
+    "theta": {"field": "Total_deaths", "type": "quantitative"},
+    "color": {
+      "field": "Causes",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "#1f77b4",
+          "#ff7f0e",
+          "#2ca02c",
+          "#d62728",
+          "#9467bd",
+          "#8c564b",
+          "#e377c2",
+          "#7f7f7f",
+          "#bcbd22",
+          "#17becf",
+          "#1a55FF",
+          "#FF00FF",
+          "#00FFFF",
+          "#FFFF00"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {"selection": "causesSelection", "value": 0.6},
+      "value": 0.2
+    }
+  },
+  "config": {}
+}
