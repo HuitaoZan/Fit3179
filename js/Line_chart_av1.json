@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Gai",
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HuitaoZan/Fit3179/main/data/filtered_data_V2.csv"
+  },
+  "params": [
+    {
+      "name": "Country_selection",
+      "value": "Average",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Average",
+          "Bangladesh",
+          "Brazil",
+          "China",
+          "Germany",
+          "India",
+          "Indonesia",
+          "Italy",
+          "Japan",
+          "Mexico",
+          "Nigeria",
+          "Pakistan",
+          "Russia",
+          "Ukraine",
+          "United States of America"
+        ],
+        "labels": [
+          "Average",
+          "Bangladesh",
+          "Brazil",
+          "China",
+          "Germany",
+          "India",
+          "Indonesia",
+          "Italy",
+          "Japan",
+          "Mexico",
+          "Nigeria",
+          "Pakistan",
+          "Russia",
+          "Ukraine",
+          "United States of America"
+        ],
+        "name": "Country: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "Country_selection == null || datum.Country_Territory == 'Average'|| datum.Country_Territory == Country_selection"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "axis": {"title": "Year", "labelFontSize": 12, "titleFontSize": 14}
+        },
+        "y": {
+          "field": "Total_death_per_year",
+          "type": "quantitative",
+          "axis": {
+            "title": "Growth Rate (%)",
+            "labelFontSize": 12,
+            "titleFontSize": 14
+          }
+        },
+        "color": {
+          "field": "Country_Territory",
+          "type": "nominal",
+          "legend": null
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum.Country_Territory == Country_selection",
+            "value": 1
+          },
+          "value": 0.5
+        },
+        "tooltip": [
+          {"field": "Country_Territory", "title": "Country:"},
+          {
+            "field": "Year",
+            "title": "Year:",
+            "type": "temporal",
+            "timeUnit": "year"
+          },
+          {
+            "field": "Total_death_per_year",
+            "title": "Total Death:",
+            "format": ",d"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"strokeWidth": 0},
+    "padding": {"left": 25, "top": 25},
+    "background": "#d9d4d449"
+  }
+}
