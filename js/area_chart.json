@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of four large companies as a small multiples of area charts.",
+  "width": 300,
+  "height": 40,
+  "data": {
+    "url": "https://raw.githubusercontent.com/HuitaoZan/Fit3179/main/data/trelli_area_top4_cause_V2.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "title": "Time", "axis": {"grid": false}},
+    "y": {
+      "field": "Deaths",
+      "type": "quantitative",
+      "title": "Deaths",
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "Cause",
+      "type": "nominal",
+      "legend": null,
+      "title": "Cause"
+    },
+    "row": {"field": "Cause", "type": "nominal", "title": "Cause"}
+  },
+  "config": {}
+}
