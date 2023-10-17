@@ -85,10 +85,10 @@
           "value": 0.5
         },
         "tooltip": [
-          {"field": "Country_Territory", "title": "Country:"},
+          {"field": "Country_Territory", "title": "Country"},
           {
             "field": "Year",
-            "title": "Year:",
+            "title": "Year",
             "type": "temporal",
             "timeUnit": "year"
           },
