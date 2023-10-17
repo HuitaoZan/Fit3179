@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Bar chart with text labels and tooltips.",
+
   "title": "Top 14 Countries by Total Deaths",
   "data": {
     "url": "https://raw.githubusercontent.com/HuitaoZan/Fit3179/main/data/Top_15_countries_d.csv",
