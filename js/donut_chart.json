@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A donut chart with data selection and click-to-emphasize.",
+
   "data": {
     "url": "https://raw.githubusercontent.com/HuitaoZan/Fit3179/main/data/result_file_top15.csv",
     "format": {"type": "csv"}
