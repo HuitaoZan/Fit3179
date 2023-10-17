@@ -1,0 +1,173 @@
+.wholepage {
+    width: 900px;
+
+    margin: auto;
+    padding: 25px;
+    padding-top: 35px;
+    text-align: left;
+}
+body *{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(photo/bk.jpg);
+}
+
+.start {
+    /* margin-bottom: 100px;
+    background-color: aqua; */
+    width: 900px;
+    background-color:#d9d4d448;
+    margin: auto;
+    padding: 20px;
+    padding-top: 35px;
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+h1 {
+    font-weight: 900;
+    color: rgb(9, 9, 9);
+    text-align: center;
+}
+
+.map_part{
+    /* background-color: aqua;
+    padding:  5px; */
+
+    width: 900px;
+    background-color: #d9d4d448;
+    margin: auto;
+    padding: 20px;
+    /* padding-top: 35px; */
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+    
+}
+.map_content {
+    margin-bottom: 180px;
+    
+}
+
+.map_content_left {
+    float: left;
+    width: 48%;
+    
+    
+}
+
+.map_content_right {
+    float: right;
+    width: 50%;
+}
+.donut_and_area_chart{
+    width: 900px;
+    background-color: #d9d4d448;
+    margin: auto;
+    padding: 20px;
+    padding-top: 35px;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+
+.donut_content_right {
+    float: right;
+    width: 50%;
+}
+
+.area_content_left {
+    float: left;
+    width: 48%;
+}
+.bar_chart_part{
+    width: 900px;
+    background-color: #d9d4d448;
+    margin: auto;
+    padding: 20px;
+    padding-top: 35px;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+
+
+.line_chart_part{
+    width: 900px;
+    background-color: #d9d4d448;
+    margin: auto;
+    padding: 20px;
+    padding-top: 35px;
+    padding-bottom: 135px;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+.bar_content_right {
+    float: right;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.line_chart_content_left {
+    float: left;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.line_chart_content_right {
+    float: right;
+    width: 48%;
+}
+.line_chart {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+CD{
+    color: #ff7f0e;
+}
+
+NP{
+    color: #FF00FF;
+}
+CRD{
+    color:#d62728 ;
+}
+LRI{
+    color: #17becf;
+}
+DID{
+    color:#7f7f7f ;
+}
+
+CN{
+    color: red;
+}
+INDIA{
+    color:red;
+}
+RU{
+    color: green;
+}
+RU{
+    color: green;
+}
+INDONESIA{
+    color: green;
+}
+US{
+    color: blue;
+}
+
+.End {
+    width: 900px;
+    background-color: #d9d4d448;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+}
